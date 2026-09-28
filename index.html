@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="吴海伦个人作品集">
+  <title>吴海伦｜作品集</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f2f2ef; color: #171717; }
+    header { min-height: 84px; padding: 18px 4vw; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    h1 { margin: 0; font-size: clamp(18px, 2.2vw, 30px); letter-spacing: .08em; font-weight: 600; }
+    a { color: inherit; }
+    .open { border-bottom: 1px solid currentColor; padding: 6px 0; text-decoration: none; white-space: nowrap; }
+    main { height: calc(100vh - 84px); padding: 0 4vw 4vw; }
+    iframe { width: 100%; height: 100%; border: 0; background: white; box-shadow: 0 16px 48px rgba(0,0,0,.09); }
+    .fallback { display: none; }
+    @media (max-width: 640px) {
+      header { min-height: 72px; }
+      main { height: calc(100vh - 72px); padding: 0; }
+      iframe { box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HAILUN WU · PORTFOLIO</h1>
+    <a class="open" href="portfolio.pdf">打开 / 下载 PDF</a>
+  </header>
+  <main>
+    <iframe src="portfolio.pdf#view=FitH" title="吴海伦作品集 PDF">
+      <p class="fallback">浏览器无法内嵌显示 PDF，请<a href="portfolio.pdf">点击这里打开</a>。</p>
+    </iframe>
+  </main>
+</body>
+</html>
